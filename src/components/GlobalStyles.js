@@ -59,7 +59,7 @@ button:hover {
 span.wave{
 	animation-name: wave-animation;
   animation-duration: 2.5s;
-  animation-iteration-count: 2;
+  animation-iteration-count: 4;
   transform-origin: 70% 70%;
   display: inline-block;
 }
