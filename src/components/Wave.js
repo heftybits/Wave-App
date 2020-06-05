@@ -11,7 +11,7 @@ function Wave() {
     timeOfDay = "afternoon";
   } else if (currentHour >= 18 && currentHour <= 20) {
     timeOfDay = "evening";
-  } else if (currentHour >= 21 && currentHour <= 4) {
+  } else if (currentHour >= 21 || currentHour <= 4) {
     timeOfDay = "night";
   }
 
