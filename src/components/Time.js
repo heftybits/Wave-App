@@ -12,21 +12,21 @@ function Time(props) {
     day: "numeric",
     hour: "numeric",
     minute: "numeric",
-    second: "numeric",
+    /**  second: "numeric", */
     hourCycle: `h${hour}`,
-    timeStyle: "medium",
+    timeStyle: "short",
     dateStyle: "full"
   };
-  const prettyTime = new Intl.DateTimeFormat(locale, options)
-    .format(time)
-    .replace("at", "-");
 
-  useEffect(() => {
+  const prettyTime = new Intl.DateTimeFormat(locale, options).format(time);
+
+  /** useEffect(() => {
     this.interval = setInterval(() => setTime(Date.now()), 1000);
     return () => {
       clearInterval(this.interval);
     };
   });
+*/
 
   return prettyTime;
 }
